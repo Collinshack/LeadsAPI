@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Sales Leads API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="57x57" href="{% static 'api_app/images/apple-icon-57x57.png' %}">
+<link rel="icon" type="image/png" sizes="60x60" href="{% static 'api_app/images/apple-icon-60x60.png' %}">
+<link rel="icon" type="image/png" sizes="72x72" href="{% static 'api_app/images/apple-icon-72x72.png' %}">
+<link rel="icon" type="image/png" sizes="76x76" href="{% static 'api_app/images/apple-icon-76x76.png' %}">
+<link rel="icon" type="image/png" sizes="114x114" href="{% static 'api_app/images/apple-icon-114x114.png' %}">
+<link rel="icon" type="image/png" sizes="120x120" href="{% static 'api_app/images/apple-icon-120x120.png' %}">
+<link rel="icon" type="image/png" sizes="144x144" href="{% static 'api_app/images/apple-icon-144x144.png' %}">
+<link rel="icon" type="image/png" sizes="152x152" href="{% static 'api_app/images/apple-icon-152x152.png' %}">
+<link rel="icon" type="image/png" sizes="180x180" href="{% static 'api_app/images/apple-icon-180x180.png' %}">
+<link rel="icon" type="image/png" sizes="192x192" href="{% static 'api_app/images/android-icon-192x192.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'api_app/images/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="96x96" href="{% static 'api_app/images/favicon-96x96.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'api_app/images/favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'api_app/images/manifest.json' %}">
+
+   
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index' %}">Free Leads API</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Developer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'docs' %}">API Documentation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Welcome to the Free Sales Leads API</h1>
+                    <p class="lead">Supercharge your sales efforts with high-quality sales leads.</p>
+                    <p>Our API provides access to curated leads data for real estate agents and YouTube creators helping you target your sales efforts more effectively.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'api_app/images/api-json.png' %}" alt="API Image" class="img-fluid">
+                                
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+      
+        <section id="features">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Easy Integration</h3>
+                    <p>Integrate our API into your existing systems with just a few lines of code. Get started quickly and efficiently.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>High-Quality Leads</h3>
+                    <p>Our leads are curated and updated regularly to ensure you're targeting the right prospects for your business.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Developer-Friendly</h3>
+                    <p>Our API documentation is comprehensive and easy to understand. Focus on building, not struggling with integration.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    
+                    <p>If you have any questions or need assistance, feel free to reach out to our developer team via contact@collinsawusa.com.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; {% now 'Y' %} Free Sales Leads API. All rights reserved.</p>
+    </footer>
+
+    {% comment %} <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> {% endcomment %}
+</body>
+</html>
